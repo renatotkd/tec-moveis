@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ionic e JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='script.js'></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+
+                <ion-icon name="logo-buffer" slot="start"></ion-icon>
+                <ion-title>Parnamirim</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-footer>
+            <ion-toolbar color="light">
+                <ion-title>Visite Parnamirim</ion-title>
+            </ion-toolbar>
+        </ion-footer>
+        <ion-content>
+            <ion-item lines="none">
+                <ion-label>Maior Cajueiro do Mundo</ion-label>
+
+            </ion-item>
+
+            <ion-card>
+                <img src="http://www.abihrn.com.br/wp-content/uploads/2018/07/maior-cajueiro-do-mundo-parnamirim-rn.jpg"
+                    alt="Maior cajueiro do Mundo " />
+                <ion-card-header>
+                    <ion-card-title>Cajueiro de Pirangi</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content class="ion-text-justify">
+                    Localizado na Praia de Pirangi, no Litoral Sul, está um dos mais belos cartões
+                    postais do Estado, o Maior Cajueiro do Mundo, a 15 km do nosso hotel em Natal.
+                    A árvore ganhou destaque pelo seu tamanho, sendo registrada no livro dos recordes, o
+                    Guiness Book, em 1994. O cajueiro conta com aproximadamente 8.500 m² de copa,
+                    produzindo 70.000 frutas por safra, o equivalente a mais de 2 toneladas e meia.
+                </ion-card-content>
+            </ion-card>
+
+            <ion-content>
+                <ion-slides pager="true">
+                    <ion-slide>
+                        <img
+                            src="https://www.praiasdenatal.com.br/wp-content/uploads/2014/07/Praia-Pirangi-do-Norte1.jpg" />
+                       
+                    </ion-slide>
+
+                    <ion-slide>
+                        <img
+                            src="https://www.praiasdenatal.com.br/wp-content/uploads/2014/09/Praia-de-Pirangi-Parrachos1.jpg" />
+                      
+                    </ion-slide>
+
+                    <ion-slide>
+                        <img
+                            src="http://www.abihrn.com.br/wp-content/uploads/2018/07/maior-cajueiro-do-mundo-parnamirim-rn.jpg" />
+                        
+                    </ion-slide>
+                </ion-slides>
+                <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+                    <ion-fab-button>
+                      <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </ion-fab-button>
+                  </ion-fab>
+            </ion-content>
+        </ion-content>
+    </ion-app>
+</body>
+
+</html>
