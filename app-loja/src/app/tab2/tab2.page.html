@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list >
+    <ion-list-header color="primary">
+      <ion-label>Nome</ion-label>
+      <ion-label>descricao</ion-label>
+      <ion-label>quantidade</ion-label>
+      <ion-label>valor</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let carrinho of listaCarrinho" >
+      <ion-label>{{carrinho.nome}}</ion-label>
+      <ion-label>{{carrinho.descricao}}</ion-label>
+      <ion-label>{{carrinho.quantidade}}</ion-label>
+      <ion-label>{{carrinho.valor}}</ion-label>
+      
+     
+    </ion-item>
+  </ion-list>
+
+</ion-content>
