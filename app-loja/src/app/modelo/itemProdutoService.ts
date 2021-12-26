@@ -1,5 +1,6 @@
 import { Produto } from './produto';
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 
 
@@ -9,20 +10,18 @@ import { Injectable } from '@angular/core';
 })
 export class ItemProdutoService {
     private itensProdutos: Produto[];
-    constructor() {
+    constructor(private toastr: ToastrService) {
 
         this.itensProdutos = [];
     }
 
-    adicionarProdutoCarinho(prod: Produto): boolean {
+    adicionarProdutoCarrinho(prod: Produto): boolean {
         if (prod != null && !this.itensProdutos.includes(prod)) {
             this.itensProdutos.push(prod);
-            console.log('produto adicionado');
-
+            this.toastr.success('produto adicionado');
             return true;
         } else {
-            console.log('produto nao adicionado');
-
+            this.toastr.warning('produto ja foi adicionado ao carrinho' );
             return false;
         }
     }
