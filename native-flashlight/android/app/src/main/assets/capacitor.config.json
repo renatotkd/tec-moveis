@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "native-flashlight",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
